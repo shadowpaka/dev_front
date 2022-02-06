@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+}
+@media only screen and (min-width: 1000px) {
+  header .header-brand {
+    border-right: 3px solid #111;
+    margin: 0;
+    text-align: left;
+    line-height: 38px;
+    padding: 0px 20px 0px 40px;
+    float: left;
+  }
+
+  /* if your item doesnt center when you use margin 0 auto then you must use a display block and if it doesnt still work thats because it is already center in its content so we use a width fit content */
+  header nav ul {
+    display: block;
+    margin: 20px 0 0 20px;
+    float: left;
+  }
+
+  header nav ul li a {
+    line-height: 60px;
+    display: block;
+  }
+  header .header-cases {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #111;
+    text-transform: uppercase;
+    line-height: 60px;
+    border: 1px solid #111;
+    float: right;
+  }
+}
+
+header .header-brand {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+  color: #111;
+}
+/* if your item doesnt center when you use margin 0 auto then you must use a display block and if it doesnt still work thats because it is already center in its content so we use a width fit content */
+header nav ul {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+header nav ul li {
+  list-style: none;
+  display: inline;
+  /* line-height: 100px; */
+  float: left;
+  padding: 0 16px;
+}
+header nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+header .header-cases {
+  display: none;
+}
+/* index */
+.index-banner {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-image: url("banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: table;
+}
+.verticle-center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.index-banner h2 {
+  font-size: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 900;
+  color: #ffff;
+  text-align: center;
+  line-height: 62px;
+}
+.index-banner p {
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-style: italic;
+  color: #ffff;
+  text-align: center;
+  padding-top: 20px;
+  line-height: 40px;
+}
+.index-links div {
+  margin: 16px 16px 0;
+  width: calc(100% - 32px);
+  height: 100px;
+  background-color: #f2f2f2;
+}
+.index-links div h3 {
+  font-size: 28px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 600;
+  color: #111;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 100px;
+}
+/* media for .index-banner */
+@media only screen and (min-width: 1000px) {
+  .wrapper {
+    width: 990px;
+    display: block;
+    margin: 0 auto;
+  }
+  .index-banner {
+    width: 100%;
+    height: 400px;
+  }
+  .index-banner p {
+    display: block;
+    width: 700px;
+    margin: 0 auto;
+  }
+}
+/* .index-links div {
+    margin: 20px 10px 0;
+    height: 230px;
+    float: left;
+    background-color: #f2f2f2;
+  }
+  .index-boxlink-1 {
+    width: calc(25% - 20px) !important;
+  }
+  .index-boxlink-2 {
+    width: calc(50% - 20px) !important;
+  }
+} */
+/* footer */
+footer {
+  width: cal(100% - 80px);
+  padding: 40px 40px;
+  background-color: #111;
+  margin-top: 20px;
+  overflow: hidden;
+}
+footer ul {
+  width: fit-content;
+  float: left;
+  padding-left: 20px;
+}
+footer ul li {
+  list-style: none;
+}
+footer ul li a {
+  color: #f3f3f3;
+  font-size: 24px;
+  font-family: cursive;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.footer-links-cases {
+  display: none;
+}
+.footer-sm {
+  width: 50px;
+  float: right;
+}
+.footer-sm img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+@media only screen and (min-width: 1000px) {
+  footer .footer-links-cases {
+    display: block;
+    color: #f3f3f3;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+  }
+  footer ul {
+    padding-right: 30px;
+  }
+  footer ul li span {
+    color: #f3f3f3;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+  footer ul li span:hover {
+    color: blue;
+  }
+  footer ul li a:hover {
+    color: red;
+  }
+}
